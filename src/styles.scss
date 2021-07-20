@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --color-blue: #3e73e0;
+  --color-gray-darking: #4c565f;
+  --color-gray-dark: #9a9a9a;
+  --color-gray-normal: #bcbcbc;
+  --color-gray-light: #fafafa;
+  --color-gray-lighting: #f7f7f7;
+  --color-white: #ffffff;
+  --color-yellow: #fcdc65;
+  --color-pink: #bd84c8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body,
+input,
+textarea,
+button {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--color-gray-light);
+}
+
+h2 {
+  color: var(--color-gray-normal);
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.panel {
+  margin-bottom: 1.5rem;
+
+  > .card-header {
+    background-color: var(--color-white);
+
+    .btn-link {
+      color: var(--color-gray-darking);
+      transition: filter 2s;
+
+      &:hover {
+        text-decoration: none;
+        filter: brightness(0.9);
+      }
+    }
+    span.text-icon {
+      color: var(--color-pink);
+    }
+
+    span > i {
+      color: var(--color-pink);
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  .card-body {
+    .btn-custom {
+      background-color: var(--color-yellow);
+      color: var(--color-white);
+    }
+  }
+}
